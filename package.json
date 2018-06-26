@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lglong519/generator.git"
+    "url": "git://github.com/lglong519/generator.git"
   },
   "bin": {
     "generator": "./bin/generator.js"
@@ -16,10 +16,7 @@
   "keywords": [],
   "author": "lglong519",
   "license": "ISC",
-  "devDependencies": {
-    "commander": "^2.15.1"
-  },
   "dependencies": {
-    "eslint-config-lglong519": "github:lglong519/eslint-config"
+    "commander": "^2.15.1"
   }
 }

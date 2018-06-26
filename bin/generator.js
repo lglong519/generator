@@ -5,13 +5,11 @@ const program = require('commander');
 
 program.version(`v${require('../package.json').version}`)
 	.description('generator');
-
-program.command('generator <file> <mode>')
+program.command('generator <mode> <file> [conf]')
 	.alias('c')
 	.description('generator')
-	.action((file, mode) => {
-		console.log(0, file, mode);
-		analize(file, mode);
+	.action((file, mode, conf) => {
+		analize(file, mode, conf);
 	});
 program.parse(process.argv);
 
