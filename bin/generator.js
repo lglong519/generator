@@ -5,8 +5,8 @@ const program = require('commander');
 
 program.version(`v${require('../package.json').version}`)
 	.description('generator');
-program.command('generator <mode> <file> [conf]')
-	.alias('c')
+program.command('generator <file> <mode> [conf]')
+	.alias('w')
 	.description('generator')
 	.action((file, mode, conf) => {
 		analize(file, mode, conf);
